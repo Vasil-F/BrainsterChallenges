@@ -1,4 +1,4 @@
-# Brainster Academy Challenges
+# BrainsterChallenges_VasilFilipovskiFS9
 
 Brainster Full stack academy group 9 - Challenges
 
