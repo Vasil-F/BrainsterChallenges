@@ -1,0 +1,121 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+nav {
+    @extend %section;
+    height: 100vh;
+    width: 20%;
+    position: fixed;
+    background-color: var.$background-color-base;
+
+    .navInner{
+        @extend %wrap;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        color: var.$text-color-base;
+
+        .logo{
+            flex-basis: 20%;    
+        }    
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 120px;
+        flex-basis: 70%;
+        li {
+           padding: 15px;
+           a {
+            text-decoration: none;
+            color: var.$text-color-base;
+            font-size: 20px;
+           }
+           a:hover {
+            text-decoration: underline;
+           }
+         }
+    }
+
+    .burger {
+        display: none;
+    }
+    
+    .text {
+            flex-basis: 10%;
+        p {
+            font-size: 14px;
+            text-align: start;
+        a {
+            text-decoration: none;
+            color: var.$text-color-base;
+            }
+            &:visited {
+                text-decoration: none;
+                color: var.$text-color-base;
+            }
+        }
+    }
+}
+
+// media queries
+
+@include mix.laptop-m-styles {
+    .navInner ul li a {
+        font-size: 18px;
+    }
+}
+
+@include mix.tablet-styles {
+    nav {
+        position: static;
+        width: 100%;
+        flex-basis: 10%;
+        padding: 20px 10px;
+        .navInner {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    .navInner{
+        ul{
+            display: none;
+        }
+        p {
+            display: none;
+        }
+        .burger {
+            display: inline-block;
+            font-size: 28px;
+        }
+    }   
+}
+
+@include mix.mobile-l-styles {
+   nav .navInner .logo {
+    flex-basis: 35%;  
+   }
+   nav .navInner .burger{
+    font-size: 25px;
+   }
+}
+
+@include mix.mobile-m-styles {
+   nav .navInner .logo {
+    flex-basis: 35%;  
+   }
+   nav .navInner .burger{
+    font-size: 22px;
+   }
+}
+
+@include mix.mobile-s-styles {
+   nav .navInner .logo {
+    flex-basis: 40%;  
+   }
+  nav .navInner .burger{
+    font-size: 18px;
+   }
+}

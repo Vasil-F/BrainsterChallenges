@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgb(52, 52, 52);
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 0.9375rem;
+  font-weight: 700;
+}
+
+nav {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+}
+@media (max-width: 768px) {
+  nav {
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+  }
+}
+
+nav .navInner {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 768px) {
+  nav .navInner {
+    width: 100%;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+.cardContainer .card a img {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+nav {
+  height: 100vh;
+  width: 20%;
+  position: fixed;
+  background-color: #FFF;
+}
+nav .navInner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: rgb(52, 52, 52);
+}
+nav .navInner .logo {
+  flex-basis: 20%;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 120px;
+  flex-basis: 70%;
+}
+nav ul li {
+  padding: 15px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: rgb(52, 52, 52);
+  font-size: 20px;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+nav .burger {
+  display: none;
+}
+nav .text {
+  flex-basis: 10%;
+}
+nav .text p {
+  font-size: 14px;
+  text-align: start;
+}
+nav .text p a {
+  text-decoration: none;
+  color: rgb(52, 52, 52);
+}
+nav .text p:visited {
+  text-decoration: none;
+  color: rgb(52, 52, 52);
+}
+
+@media (max-width: 1024px) {
+  .navInner ul li a {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  nav {
+    position: static;
+    width: 100%;
+    flex-basis: 10%;
+    padding: 20px 10px;
+  }
+  nav .navInner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navInner ul {
+    display: none;
+  }
+  .navInner p {
+    display: none;
+  }
+  .navInner .burger {
+    display: inline-block;
+    font-size: 28px;
+  }
+}
+@media (max-width: 425px) {
+  nav .navInner .logo {
+    flex-basis: 35%;
+  }
+  nav .navInner .burger {
+    font-size: 25px;
+  }
+}
+@media (max-width: 375px) {
+  nav .navInner .logo {
+    flex-basis: 35%;
+  }
+  nav .navInner .burger {
+    font-size: 22px;
+  }
+}
+@media (max-width: 320px) {
+  nav .navInner .logo {
+    flex-basis: 40%;
+  }
+  nav .navInner .burger {
+    font-size: 18px;
+  }
+}
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-basis: 80%;
+  margin-left: 20%;
+}
+.cardContainer .card {
+  flex-basis: 33.333%;
+  margin: 0;
+  position: relative;
+}
+.cardContainer {
+  height: fit-content;
+}
+.cardContainer .card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #FFF;
+}
+.cardContainer .card .overText {
+  width: 100%;
+  height: 100%;
+  color: rgb(52, 52, 52);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.cardContainer .card:hover .overlay {
+  opacity: 1;
+}
+
+.overText a {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(52, 52, 52);
+  position: relative;
+}
+.overText a span {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  padding: 20px;
+  font-size: 20px;
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .cardContainer {
+    margin: 0;
+    flex-basis: 80%;
+  }
+  .cardContainer :nth-child(n+10) {
+    display: none;
+  }
+  .cardContainer .card {
+    flex-basis: 50%;
+  }
+  .cardContainer .overText a span {
+    font-size: 17px;
+    padding: 15px;
+  }
+}
+@media (max-width: 425px) {
+  .cardContainer .card {
+    flex-basis: 100%;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
