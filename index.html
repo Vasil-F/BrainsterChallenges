@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GLOZZOM</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!-- Latest compiled and minified Bootstrap 4.6 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <!-- CSS script -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Latest Font-Awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/64087b922b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-nav navbar-dark">
+      <div>
+        <a class="logo text-grey fs-m letter-space pl-3" href="index.html">GLOZZOM</a>
+      </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a
+              class="nav-link active border-left border-light uppercase p-3 fs-sm"
+              href="index.html"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link uppercase p-3 fs-sm" href="aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link uppercase p-3 fs-sm" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link uppercase p-3 fs-sm" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link uppercase p-3 fs-sm" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="carouselMain" class="carousel slide vh-70 overflow-hidden" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselMain" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselMain" data-slide-to="1"></li>
+        <li data-target="#carouselMain" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner vh-70 overflow-hidden position-relative">
+        <div class="carousel-item active vh-70 overflow-hidden">
+          <img src="./images/image1.jpg" class="d-block w-100" alt="image1" />
+          <div
+            class="carousel-caption d-none d-md-block text-right position-absolute caption-center"
+          >
+            <h3>Heading One</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
+              voluptas dolorum tempora eveniet corrupti pariatur?
+            </p>
+            <button type="button" class="btn btn-danger">Sign up</button>
+          </div>
+        </div>
+        <div class="carousel-item vh-70 overflow-hidden position-relative">
+          <img src="./images/image2.jpg" class="d-block w-100" alt="image2" />
+          <div
+            class="carousel-caption d-none d-md-block text-center position-absolute caption-center"
+          >
+            <h3>Heading One</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
+              voluptas dolorum tempora eveniet corrupti pariatur?
+            </p>
+            <button type="button" class="btn btn-primary">Learn more</button>
+          </div>
+        </div>
+        <div class="carousel-item vh-70 overflow-hidden position-relative">
+          <img src="./images/image3.jpg" class="d-block w-100" alt="image3" />
+          <div
+            class="carousel-caption d-none d-md-block text-left position-absolute caption-center"
+          >
+            <h3>Heading One</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
+              voluptas dolorum tempora eveniet corrupti pariatur?
+            </p>
+            <button type="button" class="btn btn-success">Learn more</button>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-target="#carouselMain"
+        data-slide="prev"
+      >
+        <span class="" aria-hidden="true"
+          ><i class="fa-solid fa-chevron-left fs-lg"></i
+        ></span>
+        <span class="sr-only">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-target="#carouselMain"
+        data-slide="next"
+      >
+        <span class="" aria-hidden="true"
+          ><i class="fa-solid fa-chevron-right fs-lg"></i
+        ></span>
+        <span class="sr-only">Next</span>
+      </button>
+    </div>
+    <div class="container-fluid basic-cards">
+      <div class="container">
+        <div class="row flex-md-row flex-column pt-4">
+          <div class="col text-center">
+            <i class="fa-solid fa-gear fs-md pb-3"></i>
+            <h5 class="font-weight-normal">Turning gears</h5>
+            <p class="py-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              tempore ut blanditiis?
+            </p>
+          </div>
+          <div class="col text-center">
+            <i class="fa-solid fa-cloud fs-md pb-3"></i>
+            <h5 class="font-weight-normal">Sending data</h5>
+            <p class="py-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              tempore ut blanditiis?
+            </p>
+          </div>
+          <div class="col text-center">
+            <i class="fa-solid fa-cart-shopping fs-md pb-3"></i>
+            <h5 class="font-weight-normal">Making money</h5>
+            <p class="py-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              tempore ut blanditiis?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid are-you-ready">
+      <div class="container">
+        <div class="row p-md-4 py-5">
+          <div class="col text-white text-center">
+            <h3>Are you ready to get started ?</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni
+              voluptatum nobis accusantium deserunt, debitis dignissimos?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid basic-section">
+      <div class="container">
+        <div class="row flex-md-row flex-column p-3">
+          <div
+            class="col d-flex flex-column justify-content-center align-items-start py-4"
+          >
+            <h3 class="font-weight-normal">Lorem ipsum</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni
+              voluptatum nobis accusantium deserunt, debitis dignissimos? Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+              praesentium laboriosam quis eum? Eveniet, reprehenderit.
+            </p>
+            <button type="button" class="btn btn-outline-danger">
+              Learn more
+            </button>
+          </div>
+          <div class="col my-4">
+            <img class="d-block w-100" src="./images/laptop.png" alt="laptop" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid section-modal">
+      <div class="container p-2 text-center">
+        <!-- Button trigger modal -->
+        <i
+          type="button"
+          class="fa-solid fa-play btn text-white fs-md mt-3"
+          data-toggle="modal"
+          data-target="#exampleModal"
+        >
+        </i>
+        <p class="text-white fs-md mt-2">See what we do</p>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div
+                  class="embed-responsive embed-responsive-16by9 z-depth-1-half"
+                >
+                  <iframe
+                    frameborder="0"
+                    scrolling="no"
+                    marginheight="0"
+                    marginwidth="0"
+                    width="788.54"
+                    height="443"
+                    type="text/html"
+                    src="https://www.youtube.com/embed/pWOv9xcoMeY?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"
+                    ><div>
+                      <small
+                        ><a href="https://youtubeembedcode.com/es/"
+                          >youtubeembedcode.com/es/</a
+                        ></small
+                      >
+                    </div>
+                    <div>
+                      <small
+                        ><a href="https://xn--bstautlndskacasino-ltbg.nu/"
+                          >https://xn--bstautlndskacasino-ltbg.nu/</a
+                        ></small
+                      >
+                    </div></iframe
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid modal-photo-gallery">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center p-4">
+            <h3 class="font-weight-normal">Photo gallery</h3>
+            <p class="mb-2">Check out our photos.</p>
+          </div>
+        </div>
+        <div class="row flex-md-row flex-column">
+          <div class="col my-3">
+            <!-- Button trigger modal -->
+            <img
+              type="button"
+              class="d-block w-100"
+              data-toggle="modal"
+              data-target="#Modal1"
+              src="images/1.png"
+              alt="img1"
+            />
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="Modal1"
+              tabindex="-1"
+              aria-labelledby="Modal1Label"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img class="d-block w-100" src="images/1.png" alt="img1" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col my-3">
+            <!-- Button trigger modal -->
+            <img
+              type="button"
+              class="d-block w-100"
+              data-toggle="modal"
+              data-target="#Modal2"
+              src="images/2.png"
+              alt="img2"
+            />
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="Modal2"
+              tabindex="-1"
+              aria-labelledby="Modal2Label"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img class="d-block w-100" src="images/2.png" alt="img2" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col my-3">
+            <!-- Button trigger modal -->
+            <img
+              type="button"
+              class="d-block w-100"
+              data-toggle="modal"
+              data-target="#Modal3"
+              src="images/3.png"
+              alt="img3"
+            />
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="Modal3"
+              tabindex="-1"
+              aria-labelledby="Modal3Label"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img class="d-block w-100" src="images/3.png" alt="img3" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row flex-md-row flex-column mb-4">
+          <div class="col my-3">
+            <!-- Button trigger modal -->
+            <img
+              type="button"
+              class="d-block w-100"
+              data-toggle="modal"
+              data-target="#Modal4"
+              src="images/4.png"
+              alt="img4"
+            />
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="Modal4"
+              tabindex="-1"
+              aria-labelledby="Modal4Label"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img class="d-block w-100" src="images/4.png" alt="img4" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col my-3">
+            <!-- Button trigger modal -->
+            <img
+              type="button"
+              class="d-block w-100"
+              data-toggle="modal"
+              data-target="#Modal5"
+              src="images/5.png"
+              alt="img5"
+            />
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="Modal5"
+              tabindex="-1"
+              aria-labelledby="Modal5Label"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img class="d-block w-100" src="images/5.png" alt="img5" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col my-3">
+            <!-- Button trigger modal -->
+            <img
+              type="button"
+              class="d-block w-100"
+              data-toggle="modal"
+              data-target="#Modal6"
+              src="images/6.png"
+              alt="img6"
+            />
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="Modal6"
+              tabindex="-1"
+              aria-labelledby="Modal6Label"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img class="d-block w-100" src="images/6.png" alt="img6" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-nav">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col text-white text-center">
+            <h3>Sign Up for our newsletter</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+              numquam aliquam temporibus at culpa ea nostrum, ipsum velit animi
+              maxime?
+            </p>
+            <form>
+                <div class="form-row flex-md-row flex-column align-items-center justify-content-center">
+                  <div class="col-md-4 col-12">
+                    <label class="sr-only" for="inlineFormInput">Name</label>
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control mx-2" id="inlineFormInputGroup" placeholder="Enter Name">
+                      </div>
+                  </div>
+                  <div class="col-md-4 col-12">
+                    <label class="sr-only" for="inlineFormInputGroup">Email</label>
+                    <div class="input-group mb-2">
+                      <input type="email" class="form-control mx-2" id="inlineFormInputGroup" placeholder="Enter E-mail">
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                  </div>
+                </div>
+              </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-black">
+        <div class="row">
+            <div class="col text-center text-white p-3">
+                Copyright 2018 &copy; Glozzom
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery library -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Latest Compiled Bootstrap 4.6 JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+      integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

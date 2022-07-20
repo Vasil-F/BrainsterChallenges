@@ -1,0 +1,125 @@
+/* UTILITY */
+.uppercase {
+    text-transform: uppercase;
+}
+.text-grey {
+    color: darkgrey;
+}
+.fs-lg {
+    font-size: 2rem;
+}
+.fs-md {
+    font-size: 1.7rem;
+}
+.fs-m {
+    font-size: 1.3rem;
+}
+.fs-sm {
+    font-size: 0.9rem;
+}
+nav div a:hover {
+    text-decoration: none;
+    color: darkgrey;;
+}
+.w-90 {
+    width: 90%;
+  }
+.vh-70 {
+    height: 70vh;
+}
+.vh-15 {
+    height: 15vh;
+}
+.bg-nav {
+    background-color: rgb(45, 43, 43);
+}
+.bg-black {
+    background-color: black;
+}
+.border-grey {
+    border-color: rgb(62, 62, 62);
+}
+/* UTILITY END */
+/* HOME PAGE */
+.carousel-indicators li {
+    width: 30px;
+    height: 4px;
+    border: 1px solid white;
+    border-radius: 12px;
+}
+.caption-center {
+    top:50%;
+    transform: translateY(-50%);
+    bottom: auto;
+}
+.are-you-ready {
+    background-image: url(./images/lights.jpg);
+    background-attachment: fixed;
+    background-position: 0% 0%;
+}
+.section-modal {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.729),rgba(0, 0, 0, 0.777)) , url(./images/media.jpg);
+    background-attachment: fixed;
+}
+@media screen and (max-width: 768px) {
+    #carouselMain {
+        height: auto;
+    }
+    .carousel-inner {
+        height: auto;
+    }
+    .carousel-item {
+        height: auto;
+    }
+}
+/* HOME PAGE END */
+/* ABOUT US PAGE */
+.hero-banner {
+    background-image: url(images/image1.jpg);
+    background-attachment: fixed;
+}
+.nmt {
+    margin-top: -100px;
+}
+.caption-center2 {
+    top:50%;
+    transform: translateY(-50%);
+}
+@media screen and (max-width: 768px) {
+  .what-we-do img {
+    margin-top: -70px;
+  }
+   .carousel-inner {
+    height:20vh;
+   }
+}
+@media screen and (max-width: 425px) {
+  .what-we-do .right-side{
+    display: none;
+  }
+   .carousel-inner {
+    height:20vh;
+   }
+   .what-we-do .cards .card {
+    margin-top: 2rem;
+   }
+
+}
+@media screen and (max-width: 320px) {
+    .carousel-inner {
+        height:25vh;
+       }
+  }
+  /* ABOUT PAGE END */
+  /* SERVICES PAGE */
+  .accordion-btn:hover {
+    text-decoration: none;
+  }
+  /* SERVICES PAGE END */
+  /* CONTACT PAGE */
+  @media screen and (max-width: 425px) {
+    .contact-cards hr {
+        width: 75%;
+      }
+  }
+ 
