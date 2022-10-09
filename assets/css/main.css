@@ -1,0 +1,14 @@
+.main {
+  background-image: url(../../public/images/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg);
+}
+.menu-background {
+  background-color: beige;
+}
+.nav-item:hover {
+  background-color: antiquewhite;
+}
+.button-color {
+  background-color: antiquewhite;
+}
+
+
