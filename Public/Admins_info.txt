@@ -1,0 +1,8 @@
+Admins {
+    johndoe@example.com
+    janedoe@example.com
+    jacksmith@example.com
+    aliceburton@example.com  
+}
+
+Password = 123456
