@@ -1,0 +1,7 @@
+.jumbotron {
+    height: 40vh;
+    background-image: url(../img/home-bg.jpg);
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.47);
+    background-blend-mode: multiply;
+};
