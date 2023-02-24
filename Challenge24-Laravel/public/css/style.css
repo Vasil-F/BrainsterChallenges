@@ -1,0 +1,8 @@
+#hero {
+    background-image: url(../img/synthesio-0301.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.457);
+    background-blend-mode: multiply;
+}
